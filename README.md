@@ -3,7 +3,7 @@
  
  ----
 
-This is a port of [Articblush Colorscheme](https://github.com/articblush) for neovim using lua as backend for this :3
+This is a port of [Articblush Colorscheme](https://github.com/articblush) for neovim using lua as backend for this.
 
 ![demonstration](./misc/demonstration.png)
 
