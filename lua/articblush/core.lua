@@ -2,7 +2,7 @@ local M = {}
 
 local function get_articblush()
   return {
-    background = "#0b0d10",
+    background = "#0b2442",
     contrast = '#080a0d',
     statusline_bg = '#101215',
     lighter = '#15171a',
