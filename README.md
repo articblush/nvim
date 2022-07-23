@@ -1,5 +1,21 @@
 <h2 align="center">Articblush Neovim Theme</h2> 
- <h3 align="center"> A cold & comfy theme for Neovim usinf articblush!
+ <h3 align="center"> A cold & comfy theme for Neovim using articblush!
+<!-- BADGES -->
+<div align="center">
+   <p></p>
+   <a href="https://github.com/articblush/articblush.nvim/stargazers">
+      <img src="https://img.shields.io/github/stars/articblush/articblush.nvim?color=C9CBFF&labelColor=1C2325&style=for-the-badge">
+   </a>
+   <a href="https://github.com/articblush/articblush.nvim/issues">
+      <img src="https://img.shields.io/github/issues/articblush/articblush.nvim?color=ffb29b&labelColor=1C2325&style=for-the-badge">
+   </a>
+   <a href="../LICENSE.md">
+      <img src="https://img.shields.io/github/license/articblush/articblush.nvim?color=FCA2AA&labelColor=1C2325&style=for-the-badge">
+   </a>
+   <br>
+</div>
+<div align="center">
+   <p></p>
  
  ----
 
