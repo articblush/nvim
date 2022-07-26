@@ -26,7 +26,7 @@ This is a port of [Articblush Colorscheme](https://github.com/articblush) for Ne
 
 ## Installation
 
-You can use packer or vim-plug or something what u want.
+You can use packer or vim-plug.
 
 ### Packer
 
