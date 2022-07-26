@@ -4,7 +4,7 @@
  
  ----
 
-This is a port of [Articblush Colorscheme](https://github.com/articblush) for neovim using lua as backend for this.
+This is a port of [Articblush Colorscheme](https://github.com/articblush) for Neovim using lua as backend for this.
 
 ![demonstration](./misc/demonstration.png)
 
@@ -26,11 +26,11 @@ This is a port of [Articblush Colorscheme](https://github.com/articblush) for ne
 
 ## Installation
 
-U can use packer or vim-plug or something what u want.
+You can use packer or vim-plug or something what u want.
 
 ### Packer
 
-Put this in ur packer config:
+Put this in your packer config:
 
 ```lua
 use {'articblush/articblush.nvim', as = 'articblush'}
@@ -40,7 +40,7 @@ Then execute `:PackerInstall` or `:PackerSync` to install articblush :3
 
 ### Vim plug
 
-Put this in ur config
+Put this in your config
 
 ```vim
 Plug 'articblush/articblush.nvim', { 'as': 'articblush' }
@@ -48,13 +48,13 @@ Plug 'articblush/articblush.nvim', { 'as': 'articblush' }
 
 ### Enable the theme
 
-To enable the theme u can use the next lua code:
+You can use the following lua code to enable it:
 
 ```lua
 local present, articblush = pcall(require, 'articblush')
 
 if not present then
-  error('Can\'t import articblush, make sure u installed it! :v')
+  error('Can\'t import articblush, make sure you installed it! :v')
 end
 
 articblush.setup({
@@ -64,7 +64,7 @@ articblush.setup({
 })
 ```
 
-or if u want a more simple example:
+or if you want a more simple example:
 
 ```lua
 require('articblush').setup({
@@ -88,7 +88,7 @@ require('articblush').setup({
 })
 ```
 
-Or with vim script if u want (not able the posibility to disable tree contrast, or enable italics)
+Or with vim script if you want (not able the posibility to disable tree contrast, or enable italics)
 
 ```vim
 colorscheme articblush
@@ -112,7 +112,7 @@ EOF
 
 ## Lualine
 
-This articblush port has lualine integration, enable it! (if you use lualine lmao :D)
+This articblush port has lualine integration, too - enable it! (if you use lualine lmao)
 
 ```lua
 require('lualine').setup {
@@ -126,7 +126,7 @@ require('lualine').setup {
 
 ## Getting the colors
 
-U can get the colors of articblush using the articblush-lua based api! Check at this :3
+You can get the colors of articblush using the articblush-lua based API!
 
 ```lua
 local colors = require('articblush.core').get_colors()
