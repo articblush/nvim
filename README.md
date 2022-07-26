@@ -36,7 +36,7 @@ Put this in your packer config:
 use {'articblush/articblush.nvim', as = 'articblush'}
 ```
 
-Then execute `:PackerInstall` or `:PackerSync` to install articblush :3
+Then execute `:PackerInstall` or `:PackerSync` to install Articblush!
 
 ### Vim plug
 
