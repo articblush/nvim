@@ -1,8 +1,15 @@
-<h2 align="center">Articblush Neovim Theme</h2> 
- <h3 align="center"> A cold & comfy theme for Neovim using articblush!
+
    
+ <h1 align="center">
+	<img src="https://github.com/articblush/.github/blob/main/src/articblush56.png" width="25%" alt="Logo"/><br/>
+	Articblush Neovim/Vim</a>
+  </h1>
+
+ <h3 align="center">A cold & comfy theme for Neovim using articblush!</h3>
  
  ----
+ 
+
 
 This is a port of [Articblush Colorscheme](https://github.com/articblush) for Neovim using lua as backend for this.
 
