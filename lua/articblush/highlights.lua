@@ -1,5 +1,5 @@
 local M = {}
-local hi = vim.api.nvim_set_hl
+local hi = vim.highlight.create
 local config = require('articblush.config')
 
 function M.highlight_all(colors, opts)
