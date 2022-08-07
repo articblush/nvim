@@ -1,19 +1,22 @@
 local M = {}
-local hi = vim.highlight.create
 local config = require('articblush.config')
+
+local function hi(...)
+    vim.api.nvim_set_hl(0, ...)
+end
 
 function M.highlight_all(colors, opts)
   local base_highlights = config.highlights_base(colors)
   for group, properties in pairs(base_highlights) do
-    hi(group, properties, false)
+    hi(group, properties)
   end
   local ntree = opts.nvim_tree or { contrast = false }
   if ntree.contrast == true then
-    hi('NvimTreeNormal', { guibg = colors.contrast }, false)
-    hi('NvimTreeNormalNC', { guibg = colors.contrast }, false)
-    hi('NvimTreeEndOfBuffer', { guibg = colors.contrast, guifg = colors.contrast }, false)
-    hi('NvimTreeEndOfBufferNC', { guibg = colors.contrast, guifg = colors.contrast }, false)
-    hi('NvimTreeVertSplit', { guifg = colors.background, guibg = colors.background }, false)
+    hi('NvimTreeNormal', { bg = colors.contrast })
+    hi('NvimTreeNormalNC', { bg = colors.contrast })
+    hi('NvimTreeEndOfBuffer', { bg = colors.contrast, fg = colors.contrast })
+    hi('NvimTreeEndOfBufferNC', { bg = colors.contrast, fg = colors.contrast })
+    hi('NvimTreeVertSplit', { fg = colors.background, bg = colors.background })
   end
   if opts.italics.code == true then
     local tomkitalic = {
@@ -22,7 +25,7 @@ function M.highlight_all(colors, opts)
       'Repeat', 'TSRepeat',
     }
     for _, item in ipairs(tomkitalic) do
-      hi(item, { cterm = 'italic', gui = 'italic' }, false)
+      hi(item, { italic = true })
     end
   end
   if opts.italics.comments == true then
@@ -30,7 +33,7 @@ function M.highlight_all(colors, opts)
        'TSComment', 'Comment'
      }
      for _, item in ipairs(tomkitalic) do
-       hi(item, { cterm = 'italic', gui = 'italic' }, false)
+       hi(item, { italic = true, fg = colors.comments })
      end
   end
 end
