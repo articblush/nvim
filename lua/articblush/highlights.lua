@@ -18,7 +18,8 @@ function M.highlight_all(colors, opts)
     hi('NvimTreeEndOfBufferNC', { bg = colors.contrast, fg = colors.contrast })
     hi('NvimTreeVertSplit', { fg = colors.background, bg = colors.background })
   end
-  if opts.italics.code == true then
+  local italics = opts.italics or { comments = true, code = false }
+  if italics.code == true then
     local tomkitalic = {
       'TSKeyword', 'TSConditional',
       'Keyword', 'TSKeywordFunction', 'Function',
@@ -28,7 +29,7 @@ function M.highlight_all(colors, opts)
       hi(item, { italic = true })
     end
   end
-  if opts.italics.comments == true then
+  if italics.comments == true then
      local tomkitalic = {
        'TSComment', 'Comment'
      }
